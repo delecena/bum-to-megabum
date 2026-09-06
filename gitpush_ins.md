@@ -1,3 +1,8 @@
+# How to push (Faster Edition)
+
+git commit -am "{message}" - add and commit
+git pull --rebase origin main && git push origin main - pull and push
+
 # How to Push
 
 git remote -v
