@@ -52,6 +52,8 @@ def sample_name(P: list[list[float]], i2c: dict[int, str], c2i: dict[str, int], 
         name_chars.append(i2c[idx])
         if idx == c2i['.'] or len(name_chars) >= 20:
             break
+    if name_chars[-1] == '.':
+       del  name_chars[-1]
     out = ''.join(name_chars)
     return(out)
 
